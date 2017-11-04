@@ -1,6 +1,6 @@
 ---
 title: Introduction 
-permalink: /docs/home
+permalink: /docs/home/
 ---
 
 ### Overview

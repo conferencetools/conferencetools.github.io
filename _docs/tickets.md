@@ -1,6 +1,6 @@
 ---
 title: Installation 
-permalink: /docs/tickets
+permalink: /docs/tickets/
 ---
 
 ### Using the stand along application
