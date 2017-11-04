@@ -3,8 +3,6 @@
   - index
 
 
-- title: Examples
+- title: Tickets
   docs:
-  - cheatsheet
-  - font-awesome
-  - bootstrap
+  - tickets
