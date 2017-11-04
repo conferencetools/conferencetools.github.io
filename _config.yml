@@ -1,9 +1,8 @@
 # Site settings
-title: Jekyll Doc Theme
+title: Conference tools
 email: your-email@domain.com
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  A suite of tools designed to help organisers of conferences.
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: https://conferencetools.github.io/# the base hostname & protocol for your site
