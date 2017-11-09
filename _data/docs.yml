@@ -6,4 +6,7 @@
 - title: Tickets
   docs:
   - tickets
+  - tickets/features
   - tickets/configuration
+  - tickets/admin-commands
+  - tickets/reports
