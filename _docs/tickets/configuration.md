@@ -16,13 +16,13 @@ to function.
 ### Application Setup
 
 Once you have the main setup completed and the application is running, you will
-probably want to refer to the <application setup> page to guide you through 
-configuring the tickets you want to sell. 
+probably want to refer to the [aplication setup](/docs/tickets/configuration/application) page 
+to guide you through configuring the tickets you want to sell. 
 
 ### Customisation
 
 The application has further optional configuration which you can choose to apply:
 
- - <Google Analytics>
- - <Email Customisation>
- - <Advanced Customisation>
+ - [Google Analytics](/docs/tickets/configuration/google-analytics)
+ - [Email Customisation](/docs/tickets/configuration/email-custom)
+ - [Advanced Customisation](/docs/tickets/configuration/advanced)
