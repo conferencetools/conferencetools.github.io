@@ -7,7 +7,7 @@ Administration of the application is currently done via a command line interface
 run the commands you will need to be logged in on the server running the code. These
 functions will eventually be made available via an API as well.
 
-## Issue free tickets
+### Issue free tickets
 
 This command is intended to allow you to override the frontend requirement for payment
 on all tickets and provides a more secure way to issue free tickets to sponsors, speakers
@@ -49,7 +49,7 @@ Specifying the code will ensure it's present on the receipt and that the price i
 calculated correctly. If used it should be set to the config key of the discount
 code you wish to apply.
  
-## Cancel ticket
+### Cancel ticket
 
 The cancel ticket command is used to void an individual ticket, after it has been
 voided, the details will no longer appear in any ticket reports and the ticket 
@@ -79,7 +79,7 @@ need to retrieve it (eg to resolve a dispute with a customer)
 
 The ticket Id to cancel. This is the short string on the end of the management URL.
 
-## Report to Csv
+### Report to Csv
 
 The report to csv command produces a csv file of a database report the command is: 
 
@@ -103,7 +103,7 @@ More details on the reports can be found on the <reports> page
 The filename to write the result to. Defaults to /tmp/report.csv if the filename
 is not provided
 
-## Timeout purchases
+### Timeout purchases
 
 The timeout purchases command is intended to be called on a regular basis by a cron
 job. It will remove records pertaining to abandoned purchases eg where a customer has
@@ -112,7 +112,7 @@ the tickets for other customers to purchase. Should you need to run this command
 manually you can do so with:
 `php vendor/bin/cli tickets:timeout-purchases`
 
-## Rebuild projections
+### Rebuild projections
 
 The rebuild projections command recreates the read models based off the event log.
 This is an advanced command which you should only rarely need to run. Currently the

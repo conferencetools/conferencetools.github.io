@@ -7,19 +7,19 @@ Example configuration files for the application can be found in the `example-con
 directory. You should copy them to the `config\autoload` directory of the main Zend 
 application. Each of the files is covered in this section.
 
-## Main setup
+### Main setup
 
 Prior to the application functioning, you will need to complete the configuration 
-outlined in the <Setup> page. This is the minimum requirement to get the application
+outlined in the [Setup](/docs/tickets/configuration/setup) page. This is the minimum requirement to get the application
 to function.
 
-## Application Setup
+### Application Setup
 
 Once you have the main setup completed and the application is running, you will
 probably want to refer to the <application setup> page to guide you through 
 configuring the tickets you want to sell. 
 
-## Customisation
+### Customisation
 
 The application has further optional configuration which you can choose to apply:
 
