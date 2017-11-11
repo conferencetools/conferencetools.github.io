@@ -24,5 +24,5 @@ to guide you through configuring the tickets you want to sell.
 The application has further optional configuration which you can choose to apply:
 
  - [Google Analytics](/docs/tickets/configuration/google-analytics)
- - [Email Customisation](/docs/tickets/configuration/email-custom)
+ - [Email Customisation](/docs/tickets/configuration/email)
  - [Advanced Customisation](/docs/tickets/configuration/advanced)
