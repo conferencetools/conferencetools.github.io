@@ -3,8 +3,8 @@ title: Application Settings
 permalink: /docs/tickets/configuration/application/
 ---
 
-The applications main config file is `opentickets.local.php.dist` copy this 
-as `opentickets.local.php` This file contains all the settings for your
+The applications main config file is `conferencetools.tickets.local.php.dist` copy this 
+as `conferencetools.tickets.local.php` This file contains all the settings for your
 tickets and discount codes. It is divided into three keys: Financial, Tickets and
 Discount Codes.
 
@@ -79,6 +79,21 @@ by the admin tools for issuing tickets, however using this tool will consume ava
 Setting this to 0 has the effect of creating an admin only ticket which can only be issued by
 using the open tickets cli.
 
+#### Description
+
+This variable can be set to provide an extended description of what the ticket is for.
+
+#### Supplementary
+
+This is a boolean flag which marks the ticket as a supplementary ticket, currently this means that
+the ticket is treated as an additional option for another ticket so the app won't ask for delegate
+information to be filled out for this ticket, future plans exist to expand on this functionality to
+make it more useful. 
+
+If you have rules about which tickets must be purchased to allow purchasing a supplementary ticket, 
+you will need to implement these yourself; the best way is to override the basket validator class 
+and provide a custom implementation which enforces your rules.
+
 #### Metadata
 
 Metadata is a new feature which allows for more fine grained control over which tickets are 
@@ -90,21 +105,11 @@ new options will be added over time. Currently the supported options are.
 The `availableFrom` key can be set to a PHP DateTime object representing the data from which a ticket 
 becomes available. Leaving it blank will not restrict the date a ticket can be purchased from.
 
-Currently, if you set this field you also need to set the Available To field 
-
-To make it available indefinitely while using the available to field you can use the value 
-`(new \DateTime())->sub(new \DateInterval('P1D'))`
-
 ##### Available To
 
 The `availableTo` key can be set to a PHP DateTime object representing the data from which a ticket 
 ceases to be available. Leaving it blank will not restrict the date a ticket can be purchased
 on.
-
-Currently, if you set this field you also need to set the Available From field 
-
-To make it available indefinitely while using the available from field you can use the value 
-`(new \DateTime())->add(new \DateInterval('P1D'))`
 
 ##### Private
 
@@ -173,3 +178,20 @@ total.
 
 To clarify the last two options: Gross applies a discount to the price after tax, Net applies it
 before tax, resulting in a larger overall discount. 
+
+#### Metadata
+
+Metadata is a new feature which allows for more fine grained control over which discount codes are 
+available to be used. This is an area under active development and new options will be added over 
+time. Currently the supported options are.
+
+##### Available From
+
+The `availableFrom` key can be set to a PHP DateTime object representing the data from which a ticket 
+becomes available. Leaving it blank will not restrict the date a ticket can be purchased from.
+
+##### Available To
+
+The `availableTo` key can be set to a PHP DateTime object representing the data from which a ticket 
+ceases to be available. Leaving it blank will not restrict the date a ticket can be purchased
+on.
